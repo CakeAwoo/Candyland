@@ -1,0 +1,22 @@
+{
+  "name": "candyland",
+  "version": "1.0.0",
+  "description": "A bot made by CakeAwoo",
+  "main": "main.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/CakeAwoo/Candyland"
+  },
+  "keywords": [
+    "discord-bot",
+    "Candyland"
+  ],
+  "author": "CakeAwoo",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord.js": "^11.5.1"
+  }
+}
