@@ -15,5 +15,20 @@ client.on('message', msg => {
 });
 
 
+client.on('message', msg => {
+  if (msg.content === 'my pet') {
+
+
+    msg.reply(`Your pet:
+    Species : Jello Cat 
+    Level : 1
+    Status : Hungry AF`);
+
+  }
+});
+
+
+
+
 
 client.login(token);
