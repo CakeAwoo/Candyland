@@ -15,6 +15,8 @@ client.on('message', msg => {
 });
 
 
+
+//pet profile
 client.on('message', msg => {
   if (msg.content === 'my pet') {
 
@@ -22,7 +24,8 @@ client.on('message', msg => {
     msg.reply(`Your pet:
     Species : Jello Cat 
     Level : 1
-    Status : Hungry AF`);
+    Status : Hungry AF
+    Breed : Generic`);
 
   }
 });
