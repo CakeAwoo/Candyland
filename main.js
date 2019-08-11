@@ -25,7 +25,8 @@ client.on('message', msg => {
     Species : Jello Cat 
     Level : 1
     Status : Hungry AF
-    Breed : Generic`);
+    Breed : Generic
+    Dovenaz Resistant : false`);
 
   }
 });
