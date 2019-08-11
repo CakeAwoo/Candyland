@@ -1,3 +1,6 @@
+const myModule = require('./login');
+let token = myModule.token();
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
@@ -10,3 +13,7 @@ client.on('message', msg => {
     msg.reply(`Candyland by CakeAwoo and Jellyfish Epik :) OwO `);
   }
 });
+
+
+
+client.login(token);

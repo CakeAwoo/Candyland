@@ -2,7 +2,7 @@
   "name": "candyland",
   "version": "1.0.0",
   "description": "A bot made by CakeAwoo",
-  "main": "login.js",
+  "main": "main.js",
   "scripts": {
     "start": "node ."
   },
