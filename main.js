@@ -31,7 +31,15 @@ client.on('message', msg => {
   }
 });
 
+//feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed me
+client.on('message', msg => {
+  if (msg.content === 'my pet feed') {
 
+
+    msg.reply(`You fed your pet a cookie :cookie:`);
+
+  }
+});
 
 
 
