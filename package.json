@@ -1,7 +1,7 @@
 {
   "name": "candyland",
   "version": "1.0.0",
-  "description": "A bot made by CakeAwoo",
+  "description": "A bot made by CakeAwoo and Jellyfish",
   "main": "main.js",
   "scripts": {
     "start": "node ."
