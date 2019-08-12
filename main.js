@@ -41,7 +41,7 @@ client.on('message', msg => {
   }
 });
 
-//feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed me
+//terms
 client.on('message', msg => {
   if (msg.content === 'terms') {
 
@@ -49,7 +49,7 @@ client.on('message', msg => {
     msg.reply(`UwU Candyland falls under GPL-3.0 but there are more terms
     
     
-    1 : No using Candyland for the purpose of spreading weeb shit hentai , Stupid anime , Animemes we aint about that like
+    1 : No using Candyland for the purpose of spreading weeb shit hentai , Stupid anime , Animemes we aint about that life
     and you can get banned for that`);
 
   }
