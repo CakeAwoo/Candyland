@@ -55,11 +55,62 @@ client.on('message', msg => {
   }
 });
 
+
+
+
+
+
+
+
+
+
+
+//crazzzzzzzzzy spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacing
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//fiiiiiiiiiiiiiiiiiiiiiiiiish
 client.on('message', msg => {
   if (msg.content === 'me fish') {
 
 
     msg.reply(`You caught a swedish fish :sf: `);
+
+  }
+});
+
+
+
+
+
+
+
+//hunt
+client.on('message', msg => {
+  if (msg.content === 'me hunt') {
+
+
+    msg.reply(`You gunned down a Chocolate bunny suprise mothafucka`);
 
   }
 });
