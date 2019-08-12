@@ -55,5 +55,14 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'me fish') {
+
+
+    msg.reply(`You caught a swedish fish :sf: `);
+
+  }
+});
+
 
 client.login(token);
