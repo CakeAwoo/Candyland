@@ -4,4 +4,4 @@ https://discord.gg/ktMh8sT
 
 
 
-You should join it :)
+You should join it UwU
