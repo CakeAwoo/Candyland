@@ -5,6 +5,9 @@ const Discord = require('discord.js');
 
 const Canvas = require('canvas');
 
+const Minesweeper = require('discord.js-minesweeper');
+
+
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -147,11 +150,11 @@ client.on('guildMemberAdd', async member => {
 	ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
 	ctx.font = '28px sans-serif';
-	ctx.fillStyle = '#424242';
+	ctx.fillStyle = '#000000';
 	ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
 
 	ctx.font = applyText(canvas, `${member.displayName}!`);
-	ctx.fillStyle = '#424242';
+	ctx.fillStyle = '#000000';
 	ctx.fillText(`${member.displayName}!`, canvas.width / 2.5, canvas.height / 1.8);
 
 	ctx.beginPath();
@@ -175,5 +178,28 @@ client.on('message', async message => {
 //welcome ends here
 //thx https://github.com/discordjs/guide/blob/master/code-samples/popular-topics/canvas/index.js
 
+
+
+//minesweeper
+client.on('message', msg => {
+	if (msg.content === 'my pet play minesweeper') {
+
+	  msg.reply(`
+	  || :one: || || :one: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: ||
+	  || :boom: || || :one: || || :zero: || || :zero: || || :zero: || || :zero: || || :one: || || :one: || || :one: || || :zero: || || :zero: || || :zero: ||
+	  || :two: || || :two: || || :one: || || :one: || || :one: || || :one: || || :one: || || :boom: || || :three: || || :two: || || :one: || || :zero: ||
+	  || :one: || || :boom: || || :one: || || :one: || || :boom: || || :one: || || :one: || || :two: || || :boom: || || :boom: || || :one: || || :zero: ||
+	  || :one: || || :one: || || :one: || || :one: || || :one: || || :one: || || :zero: || || :one: || || :two: || || :two: || || :one: || || :zero: ||
+	  || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: ||
+	  || :zero: || || :one: || || :one: || || :one: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: ||
+	  || :zero: || || :one: || || :boom: || || :one: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: ||
+	  || :zero: || || :one: || || :one: || || :one: || || :zero: || || :zero: || || :one: || || :one: || || :one: || || :zero: || || :zero: || || :zero: ||
+	  || :zero: || || :one: || || :one: || || :one: || || :zero: || || :zero: || || :one: || || :boom: || || :one: || || :zero: || || :one: || || :one: ||
+	  || :zero: || || :one: || || :boom: || || :one: || || :zero: || || :zero: || || :one: || || :one: || || :one: || || :zero: || || :one: || || :boom: ||
+	  || :zero: || || :one: || || :one: || || :one: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :zero: || || :one: || || :one: ||`);
+	
+  
+	}
+  });
 
 client.login(token);
