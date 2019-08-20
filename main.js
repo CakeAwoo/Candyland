@@ -14,13 +14,50 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+
+
+
 client.on('message', msg => {
   if (msg.content === 'credits') {
     msg.reply(`Candyland by CakeAwoo and Jellyfish Epik :) OwO `);
   }
 });
 
+client.on('message', msg => {
+	if (msg.content === 'pvp kill JustCake') {
 
+	
+		
+
+	msg.reply('https://cdn.weeb.sh/images/r11as1tvZ.gif');
+
+	}
+  });
+  
+
+
+  client.on('message', msg => {
+	if (msg.content === 'pvp kill Jellyfish') {
+
+	
+		
+
+	msg.reply('https://cdn.weeb.sh/images/r11as1tvZ.gif');
+
+	}
+  });
+  
+  client.on('message', msg => {
+	if (msg.content === 'pvp kill When u h') {
+
+	
+		
+
+	msg.reply('https://cdn.weeb.sh/images/r11as1tvZ.gif');
+
+	}
+  });
+  
 
 //pet profile
 client.on('message', msg => {
@@ -124,6 +161,9 @@ client.on('message', msg => {
 
 
 
+
+
+
 //welcome starts here
 const applyText = (canvas, text) => {
 	const ctx = canvas.getContext('2d');
@@ -202,4 +242,8 @@ client.on('message', msg => {
 	}
   });
 
-client.login(token);
+
+  
+
+
+client.login(token)
