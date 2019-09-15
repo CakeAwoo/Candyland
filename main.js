@@ -1,5 +1,5 @@
-const myModule = require('./login');
-let token = myModule.token();
+const login = require('./login');
+let token = login.token();
 
 const Discord = require('discord.js');
 
@@ -92,41 +92,6 @@ client.on('message', msg => {
 
   }
 });
-
-
-
-
-
-
-
-
-
-
-
-
-//crazzzzzzzzzy spaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaacing
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //fiiiiiiiiiiiiiiiiiiiiiiiiish
 client.on('message', msg => {
