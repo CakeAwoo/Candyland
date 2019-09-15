@@ -23,7 +23,11 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'credits') {
-    msg.reply(`Candyland by CakeAwoo and Max the Wolf Epik :) OwO `);
+	msg.reply(`Candyland by the epik gamers:
+	CakeAwoo
+	Max the Wolf
+	Akiak 
+	`);
   }
 });
 
@@ -238,6 +242,7 @@ client.on('message', msg => {
   
 
 
+ 
   //CrEeEeEpEr
 client.on('message', msg => {
 	if (msg.content === 'Creeper') {
@@ -247,7 +252,6 @@ client.on('message', msg => {
   
 	}
   });
-
 
 
 
