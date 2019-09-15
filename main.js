@@ -71,20 +71,7 @@ client.on('message', msg => {
   });
   
 
-//pet profile
-client.on('message', msg => {
-  if (msg.content === 'my pet') {
 
-
-    msg.reply(`Your pet:
-    Species : Jello Cat 
-    Level : 1
-    Status : Hungry AF
-    Breed : Generic
-    Dovenaz Resistant : false`);
-
-  }
-});
 
 //feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed me
 client.on('message', msg => {
@@ -220,16 +207,20 @@ client.on('message', msg => {
   
 	}
   });
-
+//pet profile
 client.on('message', message => {
-  if (message.content === 'testing 123') {
+  if (message.content === 'my pet') {
     const embed = new RichEmbed()
      
-      .setTitle('A slick little embed')
+      .setTitle('Your Pet')
    
-      .setColor(0xFF0000)
+      .setColor(EC0BE6)
       
-      .setDescription('Hello, this is a slick embed!');
+      .setDescription(`Species : Jello Cat 
+	  Level : 1
+	  Status : Hungry AF
+	  Breed : Generic
+	  Dovenaz Resistant : false`);
     
     message.channel.send(embed);
   }
