@@ -3,12 +3,16 @@ let token = login.token();
 
 const Discord = require('discord.js');
 
+const {RichEmbed} = require('discord.js')
+
 const Canvas = require('canvas');
 
 const Minesweeper = require('discord.js-minesweeper');
 
 
 const client = new Discord.Client();
+
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -217,8 +221,19 @@ client.on('message', msg => {
 	}
   });
 
-  
-
+client.on('message', message => {
+  if (message.content === 'testing 123') {
+    const embed = new RichEmbed()
+     
+      .setTitle('A slick little embed')
+   
+      .setColor(0xFF0000)
+      
+      .setDescription('Hello, this is a slick embed!');
+    
+    message.channel.send(embed);
+  }
+});
 
 
 client.login(token)
