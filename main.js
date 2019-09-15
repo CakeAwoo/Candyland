@@ -217,7 +217,19 @@ client.on('message', msg => {
 	}
   });
 
-
+client.on('message', message => {
+  if (message.content === 'testing 123') {
+    const embed = new RichEmbed()
+     
+      .setTitle('A slick little embed')
+   
+      .setColor(0xFF0000)
+      
+      .setDescription('Hello, this is a slick embed!');
+    
+    message.channel.send(embed);
+  }
+});
 
 
 client.login(token)
