@@ -34,43 +34,46 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
-	if (msg.content === 'pvp kill JustCake') {
-
+client.on('message', message => {
+	if (message.content === 'pvp kill JustCake') {
+	  const embed = new RichEmbed()
+	   
+		.setTitle('You 420 rekt JustCake')
+	 .setImage('https://cdn.weeb.sh/images/r11as1tvZ.gif')
 	
-		
-
-	msg.reply('https://cdn.weeb.sh/images/r11as1tvZ.gif');
-
+	  
+	  message.channel.send(embed);
 	}
   });
   
+  
 
   
 
-  client.on('message', msg => {
-	if (msg.content === 'pvp kill Max the Wolf') {
-
+  client.on('message', message => {
+	if (message.content === 'pvp kill Max the wolf') {
+	  const embed = new RichEmbed()
+	   
+		.setTitle('You 420 rekt Max the wolf')
+	 .setImage('https://cdn.weeb.sh/images/r11as1tvZ.gif')
 	
-		
-
-	msg.reply('https://cdn.weeb.sh/images/r11as1tvZ.gif');
-
+	  
+	  message.channel.send(embed);
 	}
   });
   
-  client.on('message', msg => {
-	if (msg.content === 'pvp kill When u h') {
-
+  client.on('message', message => {
+	if (message.content === 'pvp kill When u h') {
+	  const embed = new RichEmbed()
+	   
+		.setTitle('You 420 rekt When u h')
+	 .setImage('https://cdn.weeb.sh/images/r11as1tvZ.gif')
 	
-		
-
-	msg.reply('https://cdn.weeb.sh/images/r11as1tvZ.gif');
-
+	  
+	  message.channel.send(embed);
 	}
   });
   
-
 
 
 //feeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeed me
@@ -214,8 +217,9 @@ client.on('message', message => {
      
       .setTitle('Your Pet')
    
-      .setColor(EC0BE6)
-      
+	  .setColor('#EC0BE6')
+	  .setThumbnail('https://i.ibb.co/FqC2Gc4/jellocat.png')
+ 
       .setDescription(`Species : Jello Cat 
 	  Level : 1
 	  Status : Hungry AF
