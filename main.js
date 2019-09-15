@@ -12,6 +12,10 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+
+
+  
+
 });
 
 
@@ -19,7 +23,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'credits') {
-    msg.reply(`Candyland by CakeAwoo and Jellyfish Epik :) OwO `);
+    msg.reply(`Candyland by CakeAwoo and Max the Wolf Epik :) OwO `);
   }
 });
 
@@ -35,9 +39,10 @@ client.on('message', msg => {
   });
   
 
+  
 
   client.on('message', msg => {
-	if (msg.content === 'pvp kill Jellyfish') {
+	if (msg.content === 'pvp kill Max the Wolf') {
 
 	
 		
@@ -84,19 +89,6 @@ client.on('message', msg => {
   }
 });
 
-//terms
-client.on('message', msg => {
-  if (msg.content === 'terms') {
-
-
-    msg.reply(`UwU Candyland falls under GPL-3.0 but there are more terms
-    
-    
-    1 : No using Candyland for the purpose of spreading weeb shit hentai , Stupid anime , Animemes we aint about that life
-    and you can get banned for that`);
-
-  }
-});
 
 
 
@@ -244,6 +236,20 @@ client.on('message', msg => {
 
 
   
+
+
+  //CrEeEeEpEr
+client.on('message', msg => {
+	if (msg.content === 'Creeper') {
+
+	  msg.reply(`Awwww Man`);
+	
+  
+	}
+  });
+
+
+
 
 
 client.login(token)
