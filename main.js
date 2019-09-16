@@ -103,14 +103,18 @@ client.on('message', msg => {
 
 
 //hunt
-client.on('message', msg => {
-  if (msg.content === 'me hunt') {
+client.on('message', message => {
+	if (message.content === 'me hunt') {
+	  const embed = new RichEmbed()
+	   
+		.setTitle('You gunned down a chocolate bunny suprise mothafucka')
+	 .setImage('i.imgur.com/Pw5xg2f.gif')
+	
 
-
-    msg.reply(`You gunned down a Chocolate bunny suprise mothafucka`);
-
-  }
-});
+	  
+	  message.channel.send(embed);
+	}
+  });
 
 
 
@@ -229,6 +233,8 @@ client.on('message', message => {
     message.channel.send(embed);
   }
 });
+
+
 
 
 client.login(token)
