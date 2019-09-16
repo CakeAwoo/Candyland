@@ -108,7 +108,7 @@ client.on('message', message => {
 	  const embed = new RichEmbed()
 	   
 		.setTitle('You gunned down a chocolate bunny suprise mothafucka')
-	 .setImage('i.imgur.com/Pw5xg2f.gif')
+	 .setImage('https://i.imgur.com/Pw5xg2f.gif')
 	
 
 	  
