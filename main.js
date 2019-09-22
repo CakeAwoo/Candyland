@@ -174,8 +174,6 @@ client.on('message', async message => {
 	}
 });
 //welcome ends here
-//thx https://github.com/discordjs/guide/blob/master/code-samples/popular-topics/canvas/index.js
-
 
 
 //minesweeper
