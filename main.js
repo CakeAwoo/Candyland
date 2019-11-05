@@ -1,18 +1,32 @@
 const login = require('./login');
 let token = login.token();
 
+var serverowocount = 0
+
 const Discord = require('discord.js');
 
 const {RichEmbed} = require('discord.js')
+
+const message = require('discord.js')
+
+const guild = require('discord.js')
 
 const Canvas = require('canvas');
 
 const Minesweeper = require('discord.js-minesweeper');
 
-
 const client = new Discord.Client();
 
+const admin = require('firebase-admin');
+const functions = require('firebase-functions');
 
+admin.initializeApp(functions.config().firebase);
+
+let db = admin.firestore();
+
+
+var fs = require("fs");
+var mkdirp = require('mkdirp');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -212,6 +226,50 @@ client.on('message', msg => {
   
 	}
   });
+
+
+//no u banning y'all really made me do this
+
+client.on('message', msg => {
+	if (msg.content === 'No u') {
+
+	  msg.reply(`Hey faggot, Don't use any form of no u   it is prohibited`);
+	
+  
+	}
+  });
+
+
+
+client.on('message', msg => {
+	if (msg.content === 'no u') {
+
+	  msg.reply(`Hey faggot, Don't use any form of no u   it is prohibited`);
+	
+  
+	}
+  });
+
+
+client.on('message', msg => {
+	if (msg.content === 'No you') {
+
+	  msg.reply(`Hey faggot, Don't use any form of no u   it is prohibited`);
+	
+  
+	}
+  });
+
+
+client.on('message', msg => {
+	if (msg.content === 'no you') {
+
+	  msg.reply(`Hey faggot, Don't use any form of no u   it is prohibited`);
+	
+  
+	}
+  });
+
 //pet profile
 client.on('message', message => {
   if (message.content === 'my pet') {
@@ -220,7 +278,7 @@ client.on('message', message => {
       .setTitle('Your Pet')
    
 	  .setColor('#EC0BE6')
-	  .setThumbnail('https://i.ibb.co/FqC2Gc4/jellocat.png')
+	  .setThumbnail('https://i.ibb.co/h2P1psb/image.png')
  
       .setDescription(`Species : Jello Cat 
 	  Level : 1
@@ -234,5 +292,84 @@ client.on('message', message => {
 
 
 
+client.on('message', msg => {
+	if (msg.content === 'me sync') {
+
+		var codegen = Math.floor((Math.random() * 11111) + 99999);
+	  msg.reply(`sync code:` + codegen);
+	
+  
+	}
+  });
+
+
+  client.on('message', message => {
+
+
+	var inv = fs.readFileSync("inventory.json");
+	var invparsed = JSON.parse(inv);
+	var slot1 = invparsed.item1;
+	var slot2 = invparsed.item2;
+	var slot3 = invparsed.item3;
+	var slot4 = invparsed.item4;
+	var slot5 = invparsed.item5;
+	var slot6 = invparsed.item6;
+	var slot7 = invparsed.item7;
+	var slot8 = invparsed.item8;
+	var slot9 = invparsed.item9;
+	var slot10 = invparsed.item10;
+
+	
+
+	if (message.content === 'my inv') {
+	  const embed = new RichEmbed()
+	   
+		.setTitle('Your Inventory')
+	 
+		.setColor('#EC0BE6')
+	
+		.setDescription(' Slot 1:'+ slot1 + ' Slot 2:'+ slot2 + ' Slot 3:'+ slot3 + ' Slot 4:'+ slot4 + ' Slot 5:'+ slot5); 
+	  
+	  message.channel.send(embed);
+	}
+  });
+  
+  client.on('message', msg => {
+	if (msg.content === 'me register') {
+		var codegen = Math.floor((Math.random() * 11111) + 99999);
+
+		var discordtag = user.username
+		
+	  msg.reply('registered ' + discordtag + 'to the database write down:' + codegen);
+	
+  
+	}
+  });
+
+
+  client.on('message', msg => {
+	if (msg.content === 'OwO') {
+	var serverowocount = serverowocount + 1;
+	  msg.reply('OwO count:' + serverowocount);
+	
+  
+	}
+  });
+
+  client.on('message', msg => {
+	if (msg.content === 'nigger') {
+		msg.reply('THATS RACIST YOU CANT SAY THE NIGGER WORD!!!!!!!!!!!!!!!!!!');
+  
+	}
+  });
+
+
+  client.on('message', msg => {
+	if (msg.content === 'nigga') {
+	  msg.reply('THATS RACIST YOU CANT SAY THE NIGGER WORD!!!!!!!!!!!!!!!!!!');
+	
+  
+	}
+  });
 
 client.login(token)
